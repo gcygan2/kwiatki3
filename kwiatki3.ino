@@ -1,15 +1,17 @@
 #include <WiFi.h>
 
 #define PRZYCISK 2
+
 void setup() {
   pinMode (PRZYCISK, INPUT_PULLUP);
-  WiFi.mode(WIFI_STA);
   Serial.begin(115200);
 
+  WiFi.mode(WIFI_STA);
   WiFi.begin("ssid", "haslo");
+  Serial.println("Łączenie z WiFi");
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
-    Serial.println("Łączenie z WiFi...");
+    Serial.print(".");
   }
   Serial.println("Połączono z WiFi");
   Serial.print("Adres IP: ");
