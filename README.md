@@ -1,4 +1,4 @@
-# Plan pracy na kółku pn. Programowanie ESP32 w środowisku Arduino
+# Plan pracy koła zainteresowań „Programowanie ESP32 w środowisku Arduino”
 
 Lp  |Temat                                                                          |Data
 ----|-------------------------------------------------------------------------------|------------
@@ -7,3 +7,4 @@ Lp  |Temat                                                                      
 3   |Korzystanie z klasy WiFi. Łączenie się z punktem dostępowym                    |24.09.2026
 4   |Łączenie się z serwerem www. Pobieranie informacji z serwera                   |01.10.2026
 5   |Odczyt wejść analogowych i wysyłanie informacji na serwer www                  |08.10.2026
+6   |Sterowanie pompą wody przy pomocy przekaźnika                                  |15.10.2026
