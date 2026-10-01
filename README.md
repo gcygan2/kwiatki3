@@ -8,3 +8,5 @@ Lp  |Temat                                                                      
 4   |Łączenie się z serwerem www. Pobieranie informacji z serwera                   |01.10.2026
 5   |Odczyt wejść analogowych i wysyłanie informacji na serwer www                  |08.10.2026
 6   |Sterowanie pompą wody przy pomocy przekaźnika                                  |15.10.2026
+
+[prezentacja](https://drive.google.com/drive/folders/1dHEn1S8lk7UZLJN-kAopNnipSzJU5nZW?usp=sharing)
