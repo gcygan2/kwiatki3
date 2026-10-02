@@ -1,5 +1,7 @@
 # Plan pracy koła zainteresowań „Programowanie ESP32 w środowisku Arduino”
 
+[prezentacja](https://docs.google.com/presentation/d/1q7fXojKZfyOhWPJ3bzpWAZN0eltFsgdV7daPlscvqGA/edit?usp=sharing)
+
 Lp  |Temat                                                                          |Data
 ----|-------------------------------------------------------------------------------|------------
 1   |Schemat blokowy mikrosterownika ESP32 C3. Konfiguracja portów wejścia-wyjścia  |10.09.2026
@@ -9,4 +11,3 @@ Lp  |Temat                                                                      
 5   |Odczyt wejść analogowych i wysyłanie informacji na serwer www                  |08.10.2026
 6   |Sterowanie pompą wody przy pomocy przekaźnika                                  |15.10.2026
 
-[prezentacja](https://drive.google.com/drive/folders/1dHEn1S8lk7UZLJN-kAopNnipSzJU5nZW?usp=sharing)
