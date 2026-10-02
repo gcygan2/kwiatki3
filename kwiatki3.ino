@@ -13,11 +13,12 @@ void setup() {
 
 void loop() {
   if (WiFi.status() == WL_CONNECTED) {
-    http.begin("http://gcygan.webd.pl/kolko/?w=12.5");
+    static int i = 0;
+    http.begin("http://gcygan.webd.pl/kolko/?w=" + String(i++));
     if (http.GET() == HTTP_CODE_OK) {
       Serial.println(http.getString());
     }
     http.end();
   }
-  delay(2000);
+  delay(10000);
 }
