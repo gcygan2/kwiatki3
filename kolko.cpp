@@ -2,7 +2,7 @@
 
 HTTPClient http;
 
-Kolko::Kolko() {
+void Kolko::setup() {
 	Serial.begin(115200);
 	WiFi.mode(WIFI_STA);
 	WiFi.begin("TP-Link_3541", "Mechatronik31wxD");

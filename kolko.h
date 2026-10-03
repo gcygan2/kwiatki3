@@ -5,6 +5,7 @@
 class Kolko 
 {
 public:
-	Kolko();
+	//Kolko();
+	void setup();
 	void loop();
 };

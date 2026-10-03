@@ -3,7 +3,7 @@
 Kolko kolko;
 
 void setup() {
-
+	kolko.setup();
 }
 
 void loop() {
