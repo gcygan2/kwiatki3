@@ -1,4 +1,5 @@
 #include "kolko.h"
+#define ADC_PIN 0
 
 Kolko kolko;
 
@@ -7,7 +8,7 @@ void setup() {
 }
 
 void loop() {
-  static int i = 0;
-	kolko.send (i++);
+  float voltage = (analogRead(ADC_PIN) / 4095.0) * 3.3;
+	kolko.send (voltage);
  	delay(10000);
 }

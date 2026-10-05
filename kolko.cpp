@@ -11,7 +11,7 @@ void Kolko::setup() {
 	//Serial.println(WiFi.localIP());
 }
 
-int Kolko::send (int i) {
+int Kolko::send (float i) {
   int ret;
 	if (WiFi.status() == WL_CONNECTED) {		
 		http.begin("http://gcygan.webd.pl/kolko/?w=" + String(i));

@@ -7,5 +7,5 @@ class Kolko
 public:
 	//Kolko();
 	void setup();
-	int send(int);
+	int send(float);
 };
