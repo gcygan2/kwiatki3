@@ -7,5 +7,5 @@ class Kolko
 public:
 	//Kolko();
 	void setup();
-	void loop();
+	int send(int);
 };

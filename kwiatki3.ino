@@ -7,5 +7,7 @@ void setup() {
 }
 
 void loop() {
-	kolko.loop();
+  static int i = 0;
+	kolko.send (i++);
+ 	delay(10000);
 }

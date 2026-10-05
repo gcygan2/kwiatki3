@@ -11,14 +11,18 @@ void Kolko::setup() {
 	Serial.println(WiFi.localIP());
 }
 
-void Kolko::loop() {
-	if (WiFi.status() == WL_CONNECTED) {
-		static int i = 0;
-		http.begin("http://gcygan.webd.pl/kolko/?w=" + String(i++));
+int Kolko::send (int i) {
+  int ret;
+	if (WiFi.status() == WL_CONNECTED) {		
+		http.begin("http://gcygan.webd.pl/kolko/?w=" + String(i));
 		if (http.GET() == HTTP_CODE_OK) {
-			Serial.println(http.getString());
-		}
+			ret = 0;
+		} else {
+			ret = 1;
+    }
 		http.end();
-	}
-	delay(10000);
+	} else {
+    ret = 2;
+  }
+  return ret;
 }
