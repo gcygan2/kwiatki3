@@ -6,9 +6,9 @@ void Kolko::setup() {
 	Serial.begin(115200);
 	WiFi.mode(WIFI_STA);
 	WiFi.begin("TP-Link_3541", "Mechatronik31wxD");
-	Serial.println("Łączenie z WiFi...");
+	//Serial.println("Łączenie z WiFi...");
 	while (WiFi.status() != WL_CONNECTED) delay(1000);
-	Serial.println(WiFi.localIP());
+	//Serial.println(WiFi.localIP());
 }
 
 int Kolko::send (int i) {
