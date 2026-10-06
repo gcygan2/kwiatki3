@@ -4,7 +4,9 @@
 Kolko kolko;
 
 void setup() {
+	pinMode (ADC_PIN, INPUT);
 	kolko.setup();
+
 }
 
 void loop() {
