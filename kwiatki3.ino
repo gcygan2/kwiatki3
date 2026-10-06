@@ -12,5 +12,5 @@ void setup() {
 void loop() {
   float voltage = (analogRead(ADC_PIN) / 4095.0) * 3.3;
 	kolko.send (voltage);
- 	delay(10000);
+ 	delay(5UL * 60UL * 1000UL);
 }
