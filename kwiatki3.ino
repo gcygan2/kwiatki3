@@ -5,18 +5,18 @@
 Kolko kolko;
 
 void setup() {
-	kolko.setup();
+  kolko.setup();
   pinMode(PRZEK, OUTPUT);
 }
 
 void loop() {
   float wilgotnosc;
   wilgotnosc = analogRead(ADC_PIN);
-	kolko.send (wilgotnosc);
+  kolko.send (wilgotnosc);
   if (kolko.get() == "1") {
     digitalWrite(PRZEK, HIGH);
    	delay(5UL * 1000UL);
     digitalWrite(PRZEK, LOW);
   }
- 	delay(10UL * 60UL * 1000UL);
+  delay(10UL * 60UL * 1000UL);
 }
