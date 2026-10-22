@@ -11,9 +11,9 @@ void setup() {
 
 void loop() {
   float wilgotnosc;
-  wilgotnosc = analogRead(ADC_PIN); 
+  wilgotnosc = analogRead(ADC_PIN);
 	kolko.send (wilgotnosc);
-  if (wilgotnosc > 1860.0) {
+  if (kolko.get() == "1") {
     digitalWrite(PRZEK, HIGH);
    	delay(5UL * 1000UL);
     digitalWrite(PRZEK, LOW);
