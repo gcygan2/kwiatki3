@@ -26,3 +26,14 @@ int Kolko::send (float i) {
   }
   return ret;
 }
+String Kolko::get () {
+  String ret = "";
+  if (WiFi.status() == WL_CONNECTED) {
+    http.begin("http://gcygan.webd.pl/kolko/status.php");
+    if (http.GET() == HTTP_CODE_OK) {
+      ret = http.getString();
+    }
+    http.end();
+  }
+  return ret;
+}

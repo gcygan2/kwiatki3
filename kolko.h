@@ -5,7 +5,7 @@
 class Kolko 
 {
 public:
-	//Kolko();
 	void setup();
 	int send(float);
+  String get();
 };
