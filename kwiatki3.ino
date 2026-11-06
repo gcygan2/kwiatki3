@@ -10,22 +10,19 @@ void setup() {
 }
 
 void pompa (){
-    digitalWrite(PRZEK, HIGH);
-   	delay(5UL * 1000UL);
-    digitalWrite(PRZEK, LOW);
+  digitalWrite(PRZEK, HIGH);
+  delay(5UL * 1000UL);
+  digitalWrite(PRZEK, LOW);
 }
 
 void loop() {
   float suchosc;
   suchosc = analogRead(ADC_PIN);
   kolko.send (suchosc);
-  if (kolko.get() == "1") {
-		pompa();
+  if (suchosc >= 1850.0) {
+    pompa();
+  } else if (kolko.get() == "1") {
+    pompa();
   }
-
-	if (suchosc >= 1850.0) {
-		pompa();
-	}
-
-	delay(10UL * 60UL * 1000UL);
+  delay(5UL * 60UL * 1000UL);
 }
