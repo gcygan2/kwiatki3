@@ -9,14 +9,23 @@ void setup() {
   pinMode(PRZEK, OUTPUT);
 }
 
-void loop() {
-  float wilgotnosc;
-  wilgotnosc = analogRead(ADC_PIN);
-  kolko.send (wilgotnosc);
-  if (kolko.get() == "1") {
+void pompa (){
     digitalWrite(PRZEK, HIGH);
    	delay(5UL * 1000UL);
     digitalWrite(PRZEK, LOW);
+}
+
+void loop() {
+  float suchosc;
+  suchosc = analogRead(ADC_PIN);
+  kolko.send (suchosc);
+  if (kolko.get() == "1") {
+		pompa();
   }
-  delay(10UL * 60UL * 1000UL);
+
+	if (suchosc >= 1850.0) {
+		pompa();
+	}
+
+	delay(10UL * 60UL * 1000UL);
 }
